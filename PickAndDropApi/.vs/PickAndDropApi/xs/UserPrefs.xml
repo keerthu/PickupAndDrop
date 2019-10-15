@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{15DB3596-34D2-49FD-A0D8-CF38491503B4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PickAndDropApi/Models/User.cs">
+    <Files>
+      <File FileName="PickAndDropApi/Models/Complaint.cs" Line="6" Column="18" />
+      <File FileName="PickAndDropApi/Data/ComplaintContext.cs" />
+      <File FileName="PickAndDropApi/appsettings.json" />
+      <File FileName="PickAndDropApi/Startup.cs" Line="47" Column="35" />
+      <File FileName="PickAndDropApi/Models/ComplaintContext.cs" Line="1" Column="1" />
+      <File FileName="PickAndDropApi/Controllers/ComplaintsController.cs" Line="13" Column="20" />
+      <File FileName="PickAndDropApi/Program.cs" />
+      <File FileName="PickAndDropApi/Models/AuthenticationContext.cs" Line="13" Column="67" />
+      <File FileName="PickAndDropApi/Models/ApplicationUser.cs" Line="7" Column="33" />
+      <File FileName="PickAndDropApi/Models/User.cs" Line="8" Column="45" />
+      <File FileName="PickAndDropApi/Controllers/UsersController.cs" Line="25" Column="10" />
+      <File FileName="PickAndDropApi/Models/LoggedInUser.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PickAndDropApi" expanded="True">
+            <Node name="PickAndDropApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="User.cs" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PickAndDropApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
