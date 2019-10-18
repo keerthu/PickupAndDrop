@@ -1,0 +1,48 @@
+<mat-card class="complaint-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>    
+        <mat-card-title>Make a complaint</mat-card-title>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <form [formGroup]="complaintForm">
+        <div class="complaint-form">
+          <mat-form-field appearance="outline">
+            <mat-label>Fullname</mat-label>
+            <input matInput placeholder="Name" formControlName="CustomerName" required>
+            <mat-icon matSuffix class="secondary-text">person</mat-icon>
+            <mat-error>Customer Name is required!</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Email Address</mat-label>
+            <input matInput placeholder="Email" formControlName="EmailAddress" required>
+            <mat-icon matSuffix class="secondary-text">email</mat-icon>
+            <mat-error *ngIf="complaintForm.get('EmailAddress').hasError('required')">
+              Email is required
+            </mat-error>
+            <mat-error
+              *ngIf="!complaintForm.get('EmailAddress').hasError('required') &&
+                                  complaintForm.get('EmailAddress').hasError('email')">
+              Please enter a valid email address
+            </mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Complaint Description</mat-label>
+            <textarea matInput placeholder="Complaint" formControlName="ComplaintDescription" rows="10" required></textarea>
+            <mat-icon matSuffix class="secondary-text">question_answer</mat-icon>
+            <mat-error>Complaint is required!</mat-error>
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+  
+    <mat-card-actions>
+      <button mat-raised-button [color]="'save'" (click)="save()"> Submit
+      </button>
+      <button mat-raised-button [color]="'close'" (click)="cancel()"> Cancel
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  

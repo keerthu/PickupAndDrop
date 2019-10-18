@@ -1,0 +1,28 @@
+    .login-form > * {
+    width: 100%;
+  }
+  
+  .login-card {
+    max-width: 400px;
+    background: #ffffff;
+    margin: 10px auto;
+    border: 1px solid #000000;
+  }
+  .example-header-image {
+    background-image: url('../../assets/images/login.jpeg');
+    background-size: cover;
+    border: 1px solid #000000;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .my-form{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .mat-card-actions {
+    margin-left: 25%;
+  }
+  

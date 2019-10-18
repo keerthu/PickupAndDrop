@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+      <mat-icon>directions_car</mat-icon>
+      <button mat-button routerLinkActive="mat-accent" [routerLink] = "['/home']"><span>{{title}}</span></button>
+      <a mat-button routerLinkActive="mat-accent" *ngIf="authService.authenticated" [routerLink] = "['/complaints']">Complaints</a>
+      <a mat-button routerLinkActive="mat-accent" *ngIf="!authService.authenticated" [routerLink]="['/complaint/create']">Make a complaint</a>
+     <span class="spacer"></span>
+     <a mat-button routerLinkActive="mat-accent" *ngIf="!authService.authenticated" [routerLink]="['/signin']">Sign in</a>
+     <a mat-raised-button  routerLinkActive="mat-accent" *ngIf="authService.authenticated" (click)="logout()">Sign out</a>
+     <a mat-raised-button  routerLinkActive="mat-accent" *ngIf="!authService.authenticated" [routerLink]="['/signup']">Create an account</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

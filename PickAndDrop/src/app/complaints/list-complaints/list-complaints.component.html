@@ -1,0 +1,62 @@
+<mat-toolbar>
+    <mat-toolbar-row>    
+        <div class="search">
+            <input class="form-control" type="text" name="search" autocomplete="off" 
+                placeholder="Search" (keyup)="applyFilter($event.target.value)">
+                <mat-icon class="search-icon">search</mat-icon>
+        </div>
+    
+        <mat-form-field class="filter">
+        <mat-label>Status</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let s of status" [value]="s" id="{{s}}" class="status" (click)="s !== 'All' ? applyFilter(s): applyFilter('')">
+            {{s}}
+            </mat-option>
+        </mat-select>
+        </mat-form-field>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+        <!--Id coloumn-->
+        <ng-container matColumnDef="No">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let i = index"> {{paginator.pageIndex * paginator.pageSize + i + 1}} </td>
+        </ng-container>
+        <!--CustomerName coloumn-->
+        <ng-container matColumnDef="customerName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.customerName}} </td>
+        </ng-container>
+        <!--CustomerName coloumn-->
+        <ng-container matColumnDef="emailAddress">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Email </th>
+            <td mat-cell *matCellDef="let element"> {{element.emailAddress}} </td>
+        </ng-container>
+        <!--CustomerName coloumn-->
+        <ng-container matColumnDef="complaintDescription">
+            <th mat-header-cell *matHeaderCellDef> Complaint </th>
+            <td mat-cell *matCellDef="let element"> {{element.complaintDescription}} </td>
+        </ng-container>
+        <!--createdAt coloumn-->
+        <ng-container matColumnDef="createdAt">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> CreatedAt </th>
+            <td mat-cell *matCellDef="let element"> {{element.createdAt}} </td>
+        </ng-container>
+        <!--status coloumn-->
+        <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+            <td mat-cell *matCellDef="let element"  id="{{element.Status}}" class="status"> {{element.status}} </td>
+        </ng-container>
+        <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let element" class="action-link"> 
+                <a mat-button [routerLink]="['/complaint', element.complaintId]">Edit</a>
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>
+

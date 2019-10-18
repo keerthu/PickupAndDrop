@@ -1,0 +1,34 @@
+<mat-card class="login-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{pageTitle}}</mat-card-title>
+    <mat-card-subtitle>{{subTitle}}</mat-card-subtitle>
+  </mat-card-header>  
+  <mat-card-content>
+    <form [formGroup]="signInForm">
+      <div class="login-form">  
+        <mat-form-field appearance="outline">
+          <mat-label>UserName</mat-label>
+          <input matInput placeholder="Username" formControlName="UserName" required>
+          <mat-icon matSuffix class="secondary-text">person</mat-icon>
+          <mat-error>UserName is required!</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" type="password" formControlName="Password" required>
+          <mat-icon matSuffix class="secondary-text">vpn_key</mat-icon>
+          <mat-error>Password is required!</mat-error>
+        </mat-form-field>
+      </div>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button [color]="'save'" (click)="login()">Sign in
+    </button>
+    <button mat-raised-button [color]="'close'" (click)="cancel()">Cancel
+    </button>
+  </mat-card-actions>
+</mat-card>
+    
