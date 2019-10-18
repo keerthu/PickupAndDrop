@@ -1,6 +1,6 @@
 using System;
 
-namespace PickAndDropApi
+namespace PickAndDropAPI
 {
     public class WeatherForecast
     {

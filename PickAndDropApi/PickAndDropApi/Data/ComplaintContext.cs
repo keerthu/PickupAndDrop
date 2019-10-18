@@ -1,14 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PickAndDropApi.Models;
+using PickAndDropAPI.Entities;
 
-namespace PickAndDropApi.Data
+namespace PickAndDropAPI.Data
 {
     public class ComplaintContext : DbContext
     {
-        public ComplaintContext(DbContextOptions<ComplaintContext> options)
-            : base(options)
+        public ComplaintContext(DbContextOptions<ComplaintContext> options):
+            base(options)
         {
         }
+
         public DbSet<Complaint> Complaints { get; set; }
     }
 }

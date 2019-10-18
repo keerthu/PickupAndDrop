@@ -1,38 +1,47 @@
-﻿<Properties StartupConfiguration="{15DB3596-34D2-49FD-A0D8-CF38491503B4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PickAndDropApi/Models/User.cs">
+﻿<Properties StartupConfiguration="{D2CA9CBB-2F88-4315-B535-AD82C9E1313E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PickAndDropAPI/Startup.cs">
     <Files>
-      <File FileName="PickAndDropApi/Models/Complaint.cs" Line="6" Column="18" />
-      <File FileName="PickAndDropApi/Data/ComplaintContext.cs" />
-      <File FileName="PickAndDropApi/appsettings.json" />
-      <File FileName="PickAndDropApi/Startup.cs" Line="47" Column="35" />
-      <File FileName="PickAndDropApi/Models/ComplaintContext.cs" Line="1" Column="1" />
-      <File FileName="PickAndDropApi/Controllers/ComplaintsController.cs" Line="13" Column="20" />
-      <File FileName="PickAndDropApi/Program.cs" />
-      <File FileName="PickAndDropApi/Models/AuthenticationContext.cs" Line="13" Column="67" />
-      <File FileName="PickAndDropApi/Models/ApplicationUser.cs" Line="7" Column="33" />
-      <File FileName="PickAndDropApi/Models/User.cs" Line="8" Column="45" />
-      <File FileName="PickAndDropApi/Controllers/UsersController.cs" Line="25" Column="10" />
-      <File FileName="PickAndDropApi/Models/LoggedInUser.cs" Line="1" Column="1" />
+      <File FileName="PickAndDropAPI/Models/Complaint.cs" Line="22" Column="1" />
+      <File FileName="PickAndDropAPI/Data/ComplaintContext.cs" Line="6" Column="34" />
+      <File FileName="PickAndDropAPI/Startup.cs" Line="36" Column="72" />
+      <File FileName="PickAndDropAPI/appsettings.json" Line="11" Column="22" />
+      <File FileName="PickAndDropAPI/Controllers/ComplaintsController.cs" Line="7" Column="29" />
+      <File FileName="PickAndDropAPI/Models/User.cs" Line="11" Column="49" />
+      <File FileName="PickAndDropAPI/Controllers/UsersController.cs" Line="7" Column="1" />
+      <File FileName="PickAndDropAPI/Helpers/AppSettings.cs" Line="6" Column="43" />
+      <File FileName="PickAndDropAPI/Models/AuthenticateModel.cs" Line="8" Column="14" />
+      <File FileName="PickAndDropAPI/Services/UserService.cs" Line="84" Column="60" />
+      <File FileName="PickAndDropAPI/Program.cs" Line="1" Column="1" />
+      <File FileName="PickAndDropAPI/Helpers/AppException.cs" Line="6" Column="42" />
+      <File FileName="PickAndDropAPI/Helpers/AutoMapperProfile.cs" Line="1" Column="1" />
+      <File FileName="PickAndDropAPI/Helpers/DataContext.cs" Line="11" Column="24" />
+      <File FileName="PickAndDropAPI/Models/RegisterModel.cs" Line="8" Column="13" />
+      <File FileName="PickAndDropAPI/Models/UpdateModel.cs" Line="9" Column="45" />
+      <File FileName="PickAndDropAPI/Models/UserModel.cs" Line="12" Column="1" />
+      <File FileName="PickAndDropAPI/complaints.db" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PickAndDropApi" expanded="True">
-            <Node name="PickAndDropApi" expanded="True">
+          <Node name="PickAndDropAPI" expanded="True">
+            <Node name="PickAndDropAPI" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="User.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PickAndDropAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.PickAndDropApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

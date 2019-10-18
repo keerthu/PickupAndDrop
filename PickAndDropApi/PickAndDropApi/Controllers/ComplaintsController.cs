@@ -1,13 +1,14 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PickAndDropApi.Models;
+using PickAndDropAPI.Data;
+using PickAndDropAPI.Entities;
+using PickAndDropAPI.Models;
 
-namespace PickAndDropApi.Controllers
+namespace PickAndDropAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -21,6 +22,7 @@ namespace PickAndDropApi.Controllers
         }
 
         // GET: api/Complaints
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Complaint>>> GetComplaints()
         {

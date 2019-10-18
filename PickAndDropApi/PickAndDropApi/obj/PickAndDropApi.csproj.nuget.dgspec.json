@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/keerthu/Projects/PickAndDropApp/PickAndDropApi/PickAndDropApi/PickAndDropApi.csproj": {}
+    "/Users/keerthu/Documents/PickAndDropApp/PickAndDropAPI/PickAndDropAPI/PickAndDropAPI.csproj": {}
   },
   "projects": {
-    "/Users/keerthu/Projects/PickAndDropApp/PickAndDropApi/PickAndDropApi/PickAndDropApi.csproj": {
+    "/Users/keerthu/Documents/PickAndDropApp/PickAndDropAPI/PickAndDropAPI/PickAndDropAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/keerthu/Projects/PickAndDropApp/PickAndDropApi/PickAndDropApi/PickAndDropApi.csproj",
-        "projectName": "PickAndDropApi",
-        "projectPath": "/Users/keerthu/Projects/PickAndDropApp/PickAndDropApi/PickAndDropApi/PickAndDropApi.csproj",
+        "projectUniqueName": "/Users/keerthu/Documents/PickAndDropApp/PickAndDropAPI/PickAndDropAPI/PickAndDropAPI.csproj",
+        "projectName": "PickAndDropAPI",
+        "projectPath": "/Users/keerthu/Documents/PickAndDropApp/PickAndDropAPI/PickAndDropAPI/PickAndDropAPI.csproj",
         "packagesPath": "/Users/keerthu/.nuget/packages/",
-        "outputPath": "/Users/keerthu/Projects/PickAndDropApp/PickAndDropApi/PickAndDropApi/obj/",
+        "outputPath": "/Users/keerthu/Documents/PickAndDropApp/PickAndDropAPI/PickAndDropAPI/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/keerthu/.config/NuGet/NuGet.Config"
+          "/Users/keerthu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -39,11 +39,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[7.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.0.0, )"
             },
@@ -58,6 +58,14 @@
               "version": "[3.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
               "target": "Package",
               "version": "[3.0.0, )"
             },
