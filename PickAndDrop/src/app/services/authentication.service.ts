@@ -21,7 +21,7 @@ export class AuthenticationService {
         localStorage.setItem('token', res.token);
         localStorage.setItem('authenticated', 'true');
         this.authenticated = true;
-        this.toastr.successToastr('Successfully LoggedIn', 'Success');
+        this.toastr.successToastr('Successfully Logged In', 'Success');
         this.router.navigate([redirectUrl]);
       },
       err => {
@@ -44,7 +44,7 @@ export class AuthenticationService {
     localStorage.removeItem('user');
     localStorage.setItem('authenticated', 'false');
     this.authenticated = false;
-    this.toastr.successToastr('Successfully logout', 'Logout');
+    this.toastr.successToastr('Successfully Logged Out', 'Logout');
     this.router.navigate(['welcome']);
   }
 }

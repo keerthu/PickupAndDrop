@@ -21,7 +21,7 @@ export class ComplaintService {
     postComplaint(complaint , redirectUrl) {
         return this.http.post(this.baseUrl + 'api/Complaints', complaint).subscribe(
         (res: any) => {
-            this.toastr.successToastr('Complaint Submitted!.Thank you for contacting us. We will soon look into the matter.', 'Success');
+            this.toastr.successToastr('Complaint Submitted!.Thank you for contacting us. We will soon look into the matter and get back to you.', 'Success');
             this.router.navigate([redirectUrl]);
         },
         err => {
